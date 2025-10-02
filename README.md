@@ -8,8 +8,23 @@ It features a **React + Vite frontend**, an **Express backend with Neon PostgreS
 ## 📂 Project Structure
 ```
 FusionAI/
-├── client/     # Frontend (React + Vite + TailwindCSS)
-└── server/     # Backend (Express + PostgreSQL + OpenAI APIs)
+├── client/ # React frontend
+│ ├── src/
+│ │ ├── pages/ # Pages (Dashboard, Tools, Community)
+│ │ ├── components/ # Reusable UI components
+│ │ ├── assets/ # Logos, icons, images
+│ │ └── App.jsx # Routes setup
+│ └── package.json
+│
+├── server/ # Express backend
+│ ├── configs/ # Cloudinary, DB, Multer setup
+│ ├── controllers/ # AI & User controllers
+│ ├── routes/ # API routes
+│ ├── middlewares/ # Auth middleware
+│ ├── server.js # Server entry point
+│ └── package.json
+│
+└── README.md
 ```
 
 ---
@@ -48,8 +63,8 @@ FusionAI/
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/your-username/fusionai.git
-cd fusionai
+git clone https://github.com/Hannaa31/ai-saas-app.git
+cd ai-saas-app
 ```
 
 ### 2️⃣ Install dependencies
@@ -127,4 +142,4 @@ CLERK_SECRET_KEY=your_clerk_secret_key
 ## 🧑‍💻 Developed by
 **Sakshi**  
 GitHub: [Hannaa31](https://github.com/Hannaa31)  
-Website: [FusionAI](https://fusionai.vercel.app/)  
+Website: [FusionAI](https://fusion-ai-one.vercel.app/)  
